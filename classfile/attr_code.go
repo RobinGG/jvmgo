@@ -5,7 +5,7 @@ type CodeAttribute struct {
 	maxStack       uint16
 	maxLocals      uint16
 	code           []byte
-	exceptionTable [] *ExceptionTableEntry
+	exceptionTable []*ExceptionTableEntry
 	attributes     []AttributeInfo
 }
 

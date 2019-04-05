@@ -4,9 +4,9 @@ type AttributeInfo interface {
 	readInfo(reader *ClassReader)
 }
 
-func readAttributes(reader *ClassReader, cp ConstantPool) [] AttributeInfo {
+func readAttributes(reader *ClassReader, cp ConstantPool) []AttributeInfo {
 	attributeCount := reader.readUint16()
-	attributes := make([] AttributeInfo, attributeCount)
+	attributes := make([]AttributeInfo, attributeCount)
 	for i := range attributes {
 		attributes[i] = readAttribute(reader, cp)
 	}

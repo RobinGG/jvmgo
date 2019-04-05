@@ -1,7 +1,7 @@
 package classfile
 
 type SourceFileAttribute struct {
-	cp ConstantPool
+	cp              ConstantPool
 	sourceFileIndex uint16
 }
 

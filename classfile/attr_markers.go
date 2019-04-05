@@ -1,7 +1,6 @@
 package classfile
 
 type MarkerAttribute struct {
-
 }
 
 func readInfo(reader *ClassReader) {
@@ -15,4 +14,3 @@ type DeprecatedAttribute struct {
 type SyntheticAttributeInfo struct {
 	MarkerAttribute
 }
-
