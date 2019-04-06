@@ -1,6 +1,6 @@
 # JVM Golang 实现
 
-## 监介
+## 简介
 
 这个项目是《自动动手写 Java 虚拟机》的代码  
 作者的源码可以在 https://github.com/zxh0/jvm.go 找到
