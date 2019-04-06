@@ -1,4 +1,4 @@
-# JVM Golang 实现![travisBuild](https://travis-ci.org/RobinGG/jvmgo.svg?branch=master)
+# JVM Golang 实现 ![travisBuild](https://travis-ci.org/RobinGG/jvmgo.svg?branch=master)
 ## 简介
 
 这个项目是《自动动手写 Java 虚拟机》的代码  
