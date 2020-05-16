@@ -1,4 +1,4 @@
-package conversions
+package comparisons
 
 import (
 	"jvmgo/instructions/base"
@@ -9,7 +9,7 @@ type LCMP struct {
 	base.NoOperandsInstruction
 }
 
-func (self *LCMP) Execution(frame *rtda.Frame) {
+func (self *LCMP) Execute(frame *rtda.Frame) {
 	stack := frame.OperandStack()
 	v2 := stack.PopLong()
 	v1 := stack.PopLong()

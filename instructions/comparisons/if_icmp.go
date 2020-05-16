@@ -1,4 +1,4 @@
-package conversions
+package comparisons
 
 import (
 	"jvmgo/instructions/base"

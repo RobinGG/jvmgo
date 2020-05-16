@@ -1,22 +1,22 @@
-package conversions
+package comparisons
 
 import (
 	"jvmgo/instructions/base"
 	"jvmgo/rtda"
 )
 
-type FCMPG struct {
+type DCMPG struct {
 	base.NoOperandsInstruction
 }
 
-type FCMPL struct {
+type DCMPL struct {
 	base.NoOperandsInstruction
 }
 
-func _fcmp(frame *rtda.Frame, gFlag bool) {
+func _dcmp(frame *rtda.Frame, gFlag bool) {
 	stack := frame.OperandStack()
-	v2 := stack.PopFloat()
-	v1 := stack.PopFloat()
+	v2 := stack.PopDouble()
+	v1 := stack.PopDouble()
 	if v1 > v2 {
 		stack.PushInt(1)
 	} else if v1 == v2 {
@@ -30,10 +30,10 @@ func _fcmp(frame *rtda.Frame, gFlag bool) {
 	}
 }
 
-func (self *FCMPG) Execute(frame *rtda.Frame) {
-	_fcmp(frame, true)
+func (self *DCMPG) Execute(frame *rtda.Frame) {
+	_dcmp(frame, true)
 }
 
-func (self *FCMPL) Execute(frame *rtda.Frame) {
-	_fcmp(frame, false)
+func (self *DCMPL) Execute(frame *rtda.Frame) {
+	_dcmp(frame, false)
 }
